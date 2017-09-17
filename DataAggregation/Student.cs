@@ -11,13 +11,14 @@ namespace DataAggregation
         //Demographics
         public string strGender { get; set; }
         public string strEthnicity { get; set; }
+        public int intAge { get; set; }
 
         //Classifiers
-        public int intAge { get; set; }
-        public int strEco { get; set; }
-        public int strDiplo { get; set; }
-        public int strCivil { get; set; }
-        public int strSocietal { get; set; }
+        public string strEco { get; set; }
+        public string strDiplo { get; set; }
+        public string strCivil { get; set; }
+        public string strSocietal { get; set; }
+        public string strOverall { get; set; }
 
         //Values
         public int intEquality { get; set; }
@@ -30,9 +31,28 @@ namespace DataAggregation
         public int intProgress { get; set; }
 
         //Constructors
-        public Student()
+        public Student() { }
+        public Student(string gender, string ethnicity, int age, string eco, string diplo, string civil, string societal, string overall, int equality, int nation, int liberty, int tradition, int markets, int world, int authority, int progress)
         {
-
+            //demographics
+            strGender = gender;
+            strEthnicity = ethnicity;
+            intAge = age;
+            //classifiers
+            strEco = eco;
+            strDiplo = diplo;
+            strCivil = civil;
+            strSocietal = societal;
+            strOverall = overall;
+            //values
+            intEquality = equality;
+            intNation = nation;
+            intLiberty = liberty;
+            intTradition = tradition;
+            intMarkets = markets;
+            intWorld = world;
+            intAuthority = authority;
+            intProgress = progress;
         }
     }
 }
