@@ -55,7 +55,7 @@ namespace DataAggregation
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-
+            Student newStudent = new Student(intAmountStudents, cboGender.Text, cboEthnicity.Text, int.Parse(txtAge.Text), cboEco.Text, cboDiplo.Text, cboCivil.Text, cboSocietal.Text, cboOverall.Text, double.Parse(txtEquality.Text), double.Parse(txtNation.Text), double.Parse(txtLiberty.Text), double.Parse(txtTradition.Text), double.Parse(txtMarkets.Text), double.Parse(txtWorld.Text), double.Parse(txtAuthority.Text), double.Parse(txtProgress.Text));
         }
     }
 }

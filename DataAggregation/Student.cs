@@ -34,8 +34,10 @@ namespace DataAggregation
 
         //Constructors
         public Student() { }
-        public Student(string gender, string ethnicity, int age, string eco, string diplo, string civil, string societal, string overall, double equality, double nation, double liberty, double tradition, double markets, double world, double authority, double progress)
+        public Student(int id, string gender, string ethnicity, int age, string eco, string diplo, string civil, string societal, string overall, double equality, double nation, double liberty, double tradition, double markets, double world, double authority, double progress)
         {
+            intID = id;
+
             //demographics
             strGender = gender;
             strEthnicity = ethnicity;
