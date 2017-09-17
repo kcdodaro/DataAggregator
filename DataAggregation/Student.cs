@@ -8,6 +8,8 @@ namespace DataAggregation
 {
     class Student
     {
+        public int intID { get; set; }
+
         //Demographics
         public string strGender { get; set; }
         public string strEthnicity { get; set; }

@@ -63,7 +63,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.txtAge = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboEthnicity = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblStudent
@@ -400,7 +400,7 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(12, 227);
+            this.btnSubmit.Location = new System.Drawing.Point(93, 228);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 23);
             this.btnSubmit.TabIndex = 30;
@@ -409,12 +409,13 @@
             // 
             // btnNewStudent
             // 
-            this.btnNewStudent.Location = new System.Drawing.Point(93, 227);
+            this.btnNewStudent.Location = new System.Drawing.Point(12, 228);
             this.btnNewStudent.Name = "btnNewStudent";
             this.btnNewStudent.Size = new System.Drawing.Size(75, 23);
             this.btnNewStudent.TabIndex = 31;
             this.btnNewStudent.Text = "New student";
             this.btnNewStudent.UseVisualStyleBackColor = true;
+            this.btnNewStudent.Click += new System.EventHandler(this.btnNewStudent_Click);
             // 
             // btnPrint
             // 
@@ -450,11 +451,11 @@
             this.label16.TabIndex = 35;
             this.label16.Text = "Ethnicity";
             // 
-            // comboBox1
+            // cboEthnicity
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cboEthnicity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEthnicity.FormattingEnabled = true;
+            this.cboEthnicity.Items.AddRange(new object[] {
             "White",
             "Black",
             "Asian",
@@ -463,17 +464,17 @@
             "Native",
             "Other",
             "Refused to answer"});
-            this.comboBox1.Location = new System.Drawing.Point(348, 6);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 36;
+            this.cboEthnicity.Location = new System.Drawing.Point(348, 6);
+            this.cboEthnicity.Name = "cboEthnicity";
+            this.cboEthnicity.Size = new System.Drawing.Size(121, 21);
+            this.cboEthnicity.TabIndex = 36;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 263);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboEthnicity);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtAge);
             this.Controls.Add(this.label15);
@@ -553,7 +554,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtAge;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboEthnicity;
     }
 }
 
