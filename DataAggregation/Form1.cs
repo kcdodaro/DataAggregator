@@ -60,6 +60,7 @@ namespace DataAggregation
 
         private void btnFinish_Click(object sender, EventArgs e)
         {
+            #region Averages
             double dblAverageStudentEquality = 0;
             double dblAverageStudentNation = 0;
             double dblAverageStudentLiberty = 0;
@@ -124,6 +125,10 @@ namespace DataAggregation
                 dblTemp += lstStudents[i].dblProgress;
             }
             dblAverageStudentProgress = dblTemp / intAmountStudents;
+            #endregion
+            #region Extremes
+
+            #endregion
         }
     }
 }
