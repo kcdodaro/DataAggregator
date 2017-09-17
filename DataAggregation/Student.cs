@@ -23,18 +23,18 @@ namespace DataAggregation
         public string strOverall { get; set; }
 
         //Values
-        public int intEquality { get; set; }
-        public int intNation { get; set; }
-        public int intLiberty { get; set; }
-        public int intTradition { get; set; }
-        public int intMarkets { get; set; }
-        public int intWorld { get; set; }
-        public int intAuthority { get; set; }
-        public int intProgress { get; set; }
+        public double dblEquality { get; set; }
+        public double dblNation { get; set; }
+        public double dblLiberty { get; set; }
+        public double dblTradition { get; set; }
+        public double dblMarkets { get; set; }
+        public double dblWorld { get; set; }
+        public double dblAuthority { get; set; }
+        public double dblProgress { get; set; }
 
         //Constructors
         public Student() { }
-        public Student(string gender, string ethnicity, int age, string eco, string diplo, string civil, string societal, string overall, int equality, int nation, int liberty, int tradition, int markets, int world, int authority, int progress)
+        public Student(string gender, string ethnicity, int age, string eco, string diplo, string civil, string societal, string overall, double equality, double nation, double liberty, double tradition, double markets, double world, double authority, double progress)
         {
             //demographics
             strGender = gender;
@@ -47,14 +47,14 @@ namespace DataAggregation
             strSocietal = societal;
             strOverall = overall;
             //values
-            intEquality = equality;
-            intNation = nation;
-            intLiberty = liberty;
-            intTradition = tradition;
-            intMarkets = markets;
-            intWorld = world;
-            intAuthority = authority;
-            intProgress = progress;
+            dblEquality = equality;
+            dblNation = nation;
+            dblLiberty = liberty;
+            dblTradition = tradition;
+            dblMarkets = markets;
+            dblWorld = world;
+            dblAuthority = authority;
+            dblProgress = progress;
         }
     }
 }

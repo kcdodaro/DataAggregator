@@ -27,11 +27,6 @@ namespace DataAggregation
         List<Student> lstStudents = new List<Student>();
         int intAmountStudents = 0;
 
-        public void addNewStudent()
-        {
-
-        }
-
         private void btnNewStudent_Click(object sender, EventArgs e)
         {
             intAmountStudents++;
@@ -56,6 +51,11 @@ namespace DataAggregation
             txtWorld.Text = null;
             txtAuthority.Text = null;
             txtProgress.Text = null;
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
