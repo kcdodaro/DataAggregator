@@ -23,5 +23,7 @@ namespace DataAggregation
             InitializeComponent();
         }
 
+        //globals
+        List<Student> lstStudents = new List<Student>(); 
     }
 }
