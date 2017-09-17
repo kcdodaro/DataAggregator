@@ -60,6 +60,8 @@
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnNewStudent = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtAge = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblStudent
@@ -421,11 +423,29 @@
             this.btnPrint.Text = "Print";
             this.btnPrint.UseVisualStyleBackColor = true;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(126, 9);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(26, 13);
+            this.label15.TabIndex = 33;
+            this.label15.Text = "Age";
+            // 
+            // txtAge
+            // 
+            this.txtAge.Location = new System.Drawing.Point(158, 6);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(100, 20);
+            this.txtAge.TabIndex = 34;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 263);
+            this.Controls.Add(this.txtAge);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnNewStudent);
             this.Controls.Add(this.btnSubmit);
@@ -499,6 +519,8 @@
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnNewStudent;
         private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtAge;
     }
 }
 
