@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Property of Kyle Dodaro
+ * Date of creation: September 17, 2017
+ * Open sourced, but do not distribute without permission
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,5 +22,6 @@ namespace DataAggregation
         {
             InitializeComponent();
         }
+
     }
 }
