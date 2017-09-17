@@ -59,7 +59,7 @@
             this.txtProgress = new System.Windows.Forms.TextBox();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnNewStudent = new System.Windows.Forms.Button();
-            this.btnPrint = new System.Windows.Forms.Button();
+            this.btnFinish = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.txtAge = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -418,14 +418,15 @@
             this.btnNewStudent.UseVisualStyleBackColor = true;
             this.btnNewStudent.Click += new System.EventHandler(this.btnNewStudent_Click);
             // 
-            // btnPrint
+            // btnFinish
             // 
-            this.btnPrint.Location = new System.Drawing.Point(497, 228);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(75, 23);
-            this.btnPrint.TabIndex = 32;
-            this.btnPrint.Text = "Print";
-            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnFinish.Location = new System.Drawing.Point(497, 228);
+            this.btnFinish.Name = "btnFinish";
+            this.btnFinish.Size = new System.Drawing.Size(75, 23);
+            this.btnFinish.TabIndex = 32;
+            this.btnFinish.Text = "Finish";
+            this.btnFinish.UseVisualStyleBackColor = true;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // label15
             // 
@@ -479,7 +480,7 @@
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtAge);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.btnPrint);
+            this.Controls.Add(this.btnFinish);
             this.Controls.Add(this.btnNewStudent);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtProgress);
@@ -551,7 +552,7 @@
         private System.Windows.Forms.TextBox txtProgress;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnNewStudent;
-        private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.Button btnFinish;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtAge;
         private System.Windows.Forms.Label label16;

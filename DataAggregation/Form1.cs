@@ -57,5 +57,73 @@ namespace DataAggregation
         {
             Student newStudent = new Student(intAmountStudents, cboGender.Text, cboEthnicity.Text, int.Parse(txtAge.Text), cboEco.Text, cboDiplo.Text, cboCivil.Text, cboSocietal.Text, cboOverall.Text, double.Parse(txtEquality.Text), double.Parse(txtNation.Text), double.Parse(txtLiberty.Text), double.Parse(txtTradition.Text), double.Parse(txtMarkets.Text), double.Parse(txtWorld.Text), double.Parse(txtAuthority.Text), double.Parse(txtProgress.Text));
         }
+
+        private void btnFinish_Click(object sender, EventArgs e)
+        {
+            double dblAverageStudentEquality = 0;
+            double dblAverageStudentNation = 0;
+            double dblAverageStudentLiberty = 0;
+            double dblAverageStudentTradition = 0;
+            double dblAverageStudentMarkets = 0;
+            double dblAverageStudentWorld = 0;
+            double dblAverageStudentAuthority = 0;
+            double dblAverageStudentProgress = 0;
+
+            double dblTemp = 0;
+            for (int i = 1; i < intAmountStudents; i++)
+            {
+                dblTemp += lstStudents[i].dblEquality;
+            }
+            dblAverageStudentEquality = dblTemp / intAmountStudents;
+
+            dblTemp = 0;
+            for (int i = 1; i < intAmountStudents; i++)
+            {
+                dblTemp += lstStudents[i].dblNation;
+            }
+            dblAverageStudentNation = dblTemp / intAmountStudents;
+
+            dblTemp = 0;
+            for (int i = 1; i < intAmountStudents; i++)
+            {
+                dblTemp += lstStudents[i].dblLiberty;
+            }
+            dblAverageStudentLiberty = dblTemp / intAmountStudents;
+
+            dblTemp = 0;
+            for (int i = 1; i < intAmountStudents; i++)
+            {
+                dblTemp += lstStudents[i].dblTradition;
+            }
+            dblAverageStudentTradition = dblTemp / intAmountStudents;
+
+            dblTemp = 0;
+            for (int i = 1; i < intAmountStudents; i++)
+            {
+                dblTemp += lstStudents[i].dblMarkets;
+            }
+            dblAverageStudentMarkets = dblTemp / intAmountStudents;
+
+            dblTemp = 0;
+            for (int i = 1; i < intAmountStudents; i++)
+            {
+                dblTemp += lstStudents[i].dblWorld;
+            }
+            dblAverageStudentWorld = dblTemp / intAmountStudents;
+
+            dblTemp = 0;
+            for (int i = 1; i < intAmountStudents; i++)
+            {
+                dblTemp += lstStudents[i].dblAuthority;
+            }
+            dblAverageStudentAuthority = dblTemp / intAmountStudents;
+
+            dblTemp = 0;
+            for (int i = 1; i < intAmountStudents; i++)
+            {
+                dblTemp += lstStudents[i].dblProgress;
+            }
+            dblAverageStudentProgress = dblTemp / intAmountStudents;
+        }
     }
 }
