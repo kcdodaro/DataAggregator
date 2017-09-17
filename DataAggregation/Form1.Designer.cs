@@ -62,6 +62,8 @@
             this.btnPrint = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.txtAge = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblStudent
@@ -439,11 +441,40 @@
             this.txtAge.Size = new System.Drawing.Size(100, 20);
             this.txtAge.TabIndex = 34;
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(295, 9);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(47, 13);
+            this.label16.TabIndex = 35;
+            this.label16.Text = "Ethnicity";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "White",
+            "Black",
+            "Asian",
+            "Middle Eastern",
+            "Hispanic",
+            "Native",
+            "Other",
+            "Refused to answer"});
+            this.comboBox1.Location = new System.Drawing.Point(348, 6);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 36;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 263);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.txtAge);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.btnPrint);
@@ -521,6 +552,8 @@
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
