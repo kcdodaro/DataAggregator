@@ -31,16 +31,35 @@
             this.lblStudent = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cboGender = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cboEco = new System.Windows.Forms.ComboBox();
+            this.cboDiplo = new System.Windows.Forms.ComboBox();
+            this.cboCivil = new System.Windows.Forms.ComboBox();
+            this.cboSocietal = new System.Windows.Forms.ComboBox();
+            this.cboOverall = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtEquality = new System.Windows.Forms.TextBox();
+            this.txtNation = new System.Windows.Forms.TextBox();
+            this.txtLiberty = new System.Windows.Forms.TextBox();
+            this.txtTradition = new System.Windows.Forms.TextBox();
+            this.txtMarkets = new System.Windows.Forms.TextBox();
+            this.txtWorld = new System.Windows.Forms.TextBox();
+            this.txtAuthority = new System.Windows.Forms.TextBox();
+            this.txtProgress = new System.Windows.Forms.TextBox();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.btnNewStudent = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblStudent
@@ -73,11 +92,11 @@
             this.cboGender.Size = new System.Drawing.Size(121, 21);
             this.cboGender.TabIndex = 3;
             // 
-            // comboBox1
+            // cboEco
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cboEco.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEco.FormattingEnabled = true;
+            this.cboEco.Items.AddRange(new object[] {
             "Communist",
             "Socialist",
             "Social",
@@ -85,16 +104,16 @@
             "Market",
             "Capitalist",
             "Laissez-Faire"});
-            this.comboBox1.Location = new System.Drawing.Point(60, 69);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 4;
+            this.cboEco.Location = new System.Drawing.Point(60, 69);
+            this.cboEco.Name = "cboEco";
+            this.cboEco.Size = new System.Drawing.Size(121, 21);
+            this.cboEco.TabIndex = 4;
             // 
-            // comboBox2
+            // cboDiplo
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cboDiplo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDiplo.FormattingEnabled = true;
+            this.cboDiplo.Items.AddRange(new object[] {
             "Cosmopolitan",
             "Internationalist",
             "Peaceful",
@@ -102,16 +121,16 @@
             "Patriotic",
             "Nationalist",
             "Chauvinist"});
-            this.comboBox2.Location = new System.Drawing.Point(60, 96);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 5;
+            this.cboDiplo.Location = new System.Drawing.Point(60, 96);
+            this.cboDiplo.Name = "cboDiplo";
+            this.cboDiplo.Size = new System.Drawing.Size(121, 21);
+            this.cboDiplo.TabIndex = 5;
             // 
-            // comboBox3
+            // cboCivil
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cboCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCivil.FormattingEnabled = true;
+            this.cboCivil.Items.AddRange(new object[] {
             "Anarchist",
             "Libertarian",
             "Liberal",
@@ -119,16 +138,16 @@
             "Statist",
             "Authoritarian",
             "Totalitarian"});
-            this.comboBox3.Location = new System.Drawing.Point(60, 123);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 6;
+            this.cboCivil.Location = new System.Drawing.Point(60, 123);
+            this.cboCivil.Name = "cboCivil";
+            this.cboCivil.Size = new System.Drawing.Size(121, 21);
+            this.cboCivil.TabIndex = 6;
             // 
-            // comboBox4
+            // cboSocietal
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cboSocietal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSocietal.FormattingEnabled = true;
+            this.cboSocietal.Items.AddRange(new object[] {
             "Revolutionary",
             "Very Progressive",
             "Progressive",
@@ -136,16 +155,16 @@
             "Traditional",
             "Very Traditional",
             "Reactionary"});
-            this.comboBox4.Location = new System.Drawing.Point(60, 150);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 7;
+            this.cboSocietal.Location = new System.Drawing.Point(60, 150);
+            this.cboSocietal.Name = "cboSocietal";
+            this.cboSocietal.Size = new System.Drawing.Size(121, 21);
+            this.cboSocietal.TabIndex = 7;
             // 
-            // comboBox5
+            // cboOverall
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.cboOverall.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboOverall.FormattingEnabled = true;
+            this.cboOverall.Items.AddRange(new object[] {
             "Anarcho-Communism",
             "Libertarian Communism",
             "Trotskyism",
@@ -197,10 +216,10 @@
             "Totalitarian Capitalism",
             "Ultra-Capitalism",
             "Anarcho-Capitalism"});
-            this.comboBox5.Location = new System.Drawing.Point(60, 177);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 21);
-            this.comboBox5.TabIndex = 8;
+            this.cboOverall.Location = new System.Drawing.Point(60, 177);
+            this.cboOverall.Name = "cboOverall";
+            this.cboOverall.Size = new System.Drawing.Size(121, 21);
+            this.cboOverall.TabIndex = 8;
             // 
             // label2
             // 
@@ -247,21 +266,195 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Overall";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(208, 73);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 13);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Equality";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(386, 73);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(45, 13);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Markets";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(214, 99);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(38, 13);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Nation";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(396, 99);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(35, 13);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "World";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(214, 124);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(38, 13);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Liberty";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(383, 125);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(48, 13);
+            this.label12.TabIndex = 19;
+            this.label12.Text = "Authority";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(204, 151);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(48, 13);
+            this.label13.TabIndex = 20;
+            this.label13.Text = "Tradition";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(383, 150);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(48, 13);
+            this.label14.TabIndex = 21;
+            this.label14.Text = "Progress";
+            // 
+            // txtEquality
+            // 
+            this.txtEquality.Location = new System.Drawing.Point(258, 69);
+            this.txtEquality.Name = "txtEquality";
+            this.txtEquality.Size = new System.Drawing.Size(100, 20);
+            this.txtEquality.TabIndex = 22;
+            // 
+            // txtNation
+            // 
+            this.txtNation.Location = new System.Drawing.Point(258, 95);
+            this.txtNation.Name = "txtNation";
+            this.txtNation.Size = new System.Drawing.Size(100, 20);
+            this.txtNation.TabIndex = 23;
+            // 
+            // txtLiberty
+            // 
+            this.txtLiberty.Location = new System.Drawing.Point(258, 121);
+            this.txtLiberty.Name = "txtLiberty";
+            this.txtLiberty.Size = new System.Drawing.Size(100, 20);
+            this.txtLiberty.TabIndex = 24;
+            // 
+            // txtTradition
+            // 
+            this.txtTradition.Location = new System.Drawing.Point(258, 147);
+            this.txtTradition.Name = "txtTradition";
+            this.txtTradition.Size = new System.Drawing.Size(100, 20);
+            this.txtTradition.TabIndex = 25;
+            // 
+            // txtMarkets
+            // 
+            this.txtMarkets.Location = new System.Drawing.Point(437, 70);
+            this.txtMarkets.Name = "txtMarkets";
+            this.txtMarkets.Size = new System.Drawing.Size(100, 20);
+            this.txtMarkets.TabIndex = 26;
+            // 
+            // txtWorld
+            // 
+            this.txtWorld.Location = new System.Drawing.Point(437, 96);
+            this.txtWorld.Name = "txtWorld";
+            this.txtWorld.Size = new System.Drawing.Size(100, 20);
+            this.txtWorld.TabIndex = 27;
+            // 
+            // txtAuthority
+            // 
+            this.txtAuthority.Location = new System.Drawing.Point(437, 122);
+            this.txtAuthority.Name = "txtAuthority";
+            this.txtAuthority.Size = new System.Drawing.Size(100, 20);
+            this.txtAuthority.TabIndex = 28;
+            // 
+            // txtProgress
+            // 
+            this.txtProgress.Location = new System.Drawing.Point(437, 148);
+            this.txtProgress.Name = "txtProgress";
+            this.txtProgress.Size = new System.Drawing.Size(100, 20);
+            this.txtProgress.TabIndex = 29;
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Location = new System.Drawing.Point(12, 227);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.TabIndex = 30;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            // 
+            // btnNewStudent
+            // 
+            this.btnNewStudent.Location = new System.Drawing.Point(93, 227);
+            this.btnNewStudent.Name = "btnNewStudent";
+            this.btnNewStudent.Size = new System.Drawing.Size(75, 23);
+            this.btnNewStudent.TabIndex = 31;
+            this.btnNewStudent.Text = "New student";
+            this.btnNewStudent.UseVisualStyleBackColor = true;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Location = new System.Drawing.Point(497, 228);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(75, 23);
+            this.btnPrint.TabIndex = 32;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 561);
+            this.ClientSize = new System.Drawing.Size(584, 263);
+            this.Controls.Add(this.btnPrint);
+            this.Controls.Add(this.btnNewStudent);
+            this.Controls.Add(this.btnSubmit);
+            this.Controls.Add(this.txtProgress);
+            this.Controls.Add(this.txtAuthority);
+            this.Controls.Add(this.txtWorld);
+            this.Controls.Add(this.txtMarkets);
+            this.Controls.Add(this.txtTradition);
+            this.Controls.Add(this.txtLiberty);
+            this.Controls.Add(this.txtNation);
+            this.Controls.Add(this.txtEquality);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboOverall);
+            this.Controls.Add(this.cboSocietal);
+            this.Controls.Add(this.cboCivil);
+            this.Controls.Add(this.cboDiplo);
+            this.Controls.Add(this.cboEco);
             this.Controls.Add(this.cboGender);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblStudent);
@@ -277,16 +470,35 @@
         private System.Windows.Forms.Label lblStudent;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboGender;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cboEco;
+        private System.Windows.Forms.ComboBox cboDiplo;
+        private System.Windows.Forms.ComboBox cboCivil;
+        private System.Windows.Forms.ComboBox cboSocietal;
+        private System.Windows.Forms.ComboBox cboOverall;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtEquality;
+        private System.Windows.Forms.TextBox txtNation;
+        private System.Windows.Forms.TextBox txtLiberty;
+        private System.Windows.Forms.TextBox txtTradition;
+        private System.Windows.Forms.TextBox txtMarkets;
+        private System.Windows.Forms.TextBox txtWorld;
+        private System.Windows.Forms.TextBox txtAuthority;
+        private System.Windows.Forms.TextBox txtProgress;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Button btnNewStudent;
+        private System.Windows.Forms.Button btnPrint;
     }
 }
 
