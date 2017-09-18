@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAggregation
 {
-    class Student
+    public class Student
     {
         public int intID { get; set; }
 
