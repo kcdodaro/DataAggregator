@@ -56,6 +56,7 @@ namespace DataAggregation
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             Student newStudent = new Student(intAmountStudents, cboGender.Text, cboEthnicity.Text, int.Parse(txtAge.Text), cboEco.Text, cboDiplo.Text, cboCivil.Text, cboSocietal.Text, cboOverall.Text, double.Parse(txtEquality.Text), double.Parse(txtNation.Text), double.Parse(txtLiberty.Text), double.Parse(txtTradition.Text), double.Parse(txtMarkets.Text), double.Parse(txtWorld.Text), double.Parse(txtAuthority.Text), double.Parse(txtProgress.Text));
+            lstStudents.Add(newStudent);
         }
 
         private void btnFinish_Click(object sender, EventArgs e)
@@ -73,60 +74,132 @@ namespace DataAggregation
             double dblTemp = 0;
             for (int i = 1; i < intAmountStudents; i++)
             {
-                dblTemp += lstStudents[i].dblEquality;
+                dblTemp += lstStudents[i - 1].dblEquality;
             }
             dblAverageStudentEquality = dblTemp / intAmountStudents;
 
             dblTemp = 0;
             for (int i = 1; i < intAmountStudents; i++)
             {
-                dblTemp += lstStudents[i].dblNation;
+                dblTemp += lstStudents[i - 1].dblNation;
             }
             dblAverageStudentNation = dblTemp / intAmountStudents;
 
             dblTemp = 0;
             for (int i = 1; i < intAmountStudents; i++)
             {
-                dblTemp += lstStudents[i].dblLiberty;
+                dblTemp += lstStudents[i - 1].dblLiberty;
             }
             dblAverageStudentLiberty = dblTemp / intAmountStudents;
 
             dblTemp = 0;
             for (int i = 1; i < intAmountStudents; i++)
             {
-                dblTemp += lstStudents[i].dblTradition;
+                dblTemp += lstStudents[i - 1].dblTradition;
             }
             dblAverageStudentTradition = dblTemp / intAmountStudents;
 
             dblTemp = 0;
             for (int i = 1; i < intAmountStudents; i++)
             {
-                dblTemp += lstStudents[i].dblMarkets;
+                dblTemp += lstStudents[i - 1].dblMarkets;
             }
             dblAverageStudentMarkets = dblTemp / intAmountStudents;
 
             dblTemp = 0;
             for (int i = 1; i < intAmountStudents; i++)
             {
-                dblTemp += lstStudents[i].dblWorld;
+                dblTemp += lstStudents[i - 1].dblWorld;
             }
             dblAverageStudentWorld = dblTemp / intAmountStudents;
 
             dblTemp = 0;
             for (int i = 1; i < intAmountStudents; i++)
             {
-                dblTemp += lstStudents[i].dblAuthority;
+                dblTemp += lstStudents[i - 1].dblAuthority;
             }
             dblAverageStudentAuthority = dblTemp / intAmountStudents;
 
             dblTemp = 0;
             for (int i = 1; i < intAmountStudents; i++)
             {
-                dblTemp += lstStudents[i].dblProgress;
+                dblTemp += lstStudents[i - 1].dblProgress;
             }
             dblAverageStudentProgress = dblTemp / intAmountStudents;
             #endregion
+
             #region Extremes
+            List<double> lstEquality = new List<double>();
+            double dblEqualityExtreme = 0;
+            for (int i = 0; i < lstStudents.Count; i++)
+            {
+                lstEquality.Add(lstStudents[i].dblEquality);
+            }
+            lstEquality.Sort();
+            dblEqualityExtreme = lstEquality[lstEquality.Count];
+
+            List<double> lstNation = new List<double>();
+            double dblNationExtreme = 0;
+            for (int i = 0; i < lstStudents.Count; i++)
+            {
+                lstNation.Add(lstStudents[i].dblNation);
+            }
+            lstNation.Sort();
+            dblNationExtreme = lstNation[lstNation.Count];
+
+            List<double> lstLiberty = new List<double>();
+            double dblLibertyExtreme = 0;
+            for (int i = 0; i < lstStudents.Count; i++)
+            {
+                lstLiberty.Add(lstStudents[i].dblLiberty);
+            }
+            lstLiberty.Sort();
+            dblLibertyExtreme = lstLiberty[lstLiberty.Count];
+
+            List<double> lstTradition = new List<double>();
+            double dblTraditionExtreme = 0;
+            for (int i = 0; i < lstStudents.Count; i++)
+            {
+                lstTradition.Add(lstStudents[i].dblTradition);
+            }
+            lstTradition.Sort();
+            dblTraditionExtreme = lstTradition[lstTradition.Count];
+
+            List<double> lstMarkets = new List<double>();
+            double dblMarketsExtreme = 0;
+            for (int i = 0; i < lstStudents.Count; i++)
+            {
+                lstMarkets.Add(lstStudents[i].dblMarkets);
+            }
+            lstMarkets.Sort();
+            dblMarketsExtreme = lstMarkets[lstMarkets.Count];
+
+            List<double> lstWorld = new List<double>();
+            double dblWorldExtreme = 0;
+            for (int i = 0; i < lstStudents.Count; i++)
+            {
+                lstWorld.Add(lstStudents[i].dblWorld);
+            }
+            lstWorld.Sort();
+            dblWorldExtreme = lstWorld[lstWorld.Count];
+
+            List<double> lstAuthority = new List<double>();
+            double dblAuthorityExtreme = 0;
+            for (int i = 0; i < lstStudents.Count; i++)
+            {
+                lstAuthority.Add(lstStudents[i].dblAuthority);
+            }
+            lstAuthority.Sort();
+            dblAuthorityExtreme = lstAuthority[lstAuthority.Count];
+
+            List<double> lstProgress = new List<double>();
+            double dblProgressExtreme = 0;
+            for (int i = 0; i < lstStudents.Count; i++)
+            {
+                lstProgress.Add(lstStudents[i].dblProgress);
+            }
+            lstProgress.Sort();
+            dblProgressExtreme = lstProgress[lstProgress.Count];
 
             #endregion
         }
