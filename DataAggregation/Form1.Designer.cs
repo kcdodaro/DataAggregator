@@ -89,7 +89,8 @@
             this.cboGender.Items.AddRange(new object[] {
             "Male",
             "Female",
-            "Other"});
+            "Other",
+            "Refused to answer"});
             this.cboGender.Location = new System.Drawing.Point(60, 42);
             this.cboGender.Name = "cboGender";
             this.cboGender.Size = new System.Drawing.Size(121, 21);
