@@ -207,7 +207,7 @@ namespace DataAggregation
 
             #region Outputs
             string strOutput = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "dataAggregate.txt";
-            Output output = new Output();
+            Output output = new Output(dblAverageStudentEquality, dblAverageStudentNation, dblAverageStudentLiberty, dblAverageStudentTradition, dblAverageStudentMarkets, dblAverageStudentWorld, dblAverageStudentAuthority, dblAverageStudentProgress, dblEqualityExtreme, dblNationExtreme, dblLibertyExtreme, dblTraditionExtreme, dblMarketsExtreme, dblWorldExtreme, dblAuthorityExtreme, dblProgressExtreme);
 
             XmlSerializer sz = new XmlSerializer(typeof(Output));
             using (TextWriter tw = new StreamWriter(strOutput))
