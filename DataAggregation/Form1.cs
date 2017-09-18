@@ -215,6 +215,17 @@ namespace DataAggregation
             {
                 sz.Serialize(tw, output);
             }
+
+            for(int i = 0; i < lstStudents.Count; i++)
+            {
+                string strOutput2 = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + "//" + lstStudents[i].intID + ".xml";
+
+                XmlSerializer sz2 = new XmlSerializer(typeof(Student));
+                using (TextWriter tw = new StreamWriter(strOutput2))
+                {
+                    sz2.Serialize(tw, lstStudents[i]);
+                }
+            }
             #endregion
         }
     }
