@@ -13,7 +13,6 @@ namespace DataAggregation
         //Demographics
         public string strGender { get; set; }
         public string strEthnicity { get; set; }
-        public int intAge { get; set; }
 
         //Classifiers
         public string strEco { get; set; }
@@ -34,14 +33,13 @@ namespace DataAggregation
 
         //Constructors
         public Student() { }
-        public Student(int id, string gender, string ethnicity, int age, string eco, string diplo, string civil, string societal, string overall, double equality, double nation, double liberty, double tradition, double markets, double world, double authority, double progress)
+        public Student(int id, string gender, string ethnicity, string eco, string diplo, string civil, string societal, string overall, double equality, double nation, double liberty, double tradition, double markets, double world, double authority, double progress)
         {
             intID = id;
 
             //demographics
             strGender = gender;
             strEthnicity = ethnicity;
-            intAge = age;
             //classifiers
             strEco = eco;
             strDiplo = diplo;

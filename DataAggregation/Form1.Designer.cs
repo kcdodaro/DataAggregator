@@ -60,8 +60,6 @@
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnNewStudent = new System.Windows.Forms.Button();
             this.btnFinish = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtAge = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.cboEthnicity = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -90,7 +88,8 @@
             this.cboGender.FormattingEnabled = true;
             this.cboGender.Items.AddRange(new object[] {
             "Male",
-            "Female"});
+            "Female",
+            "Other"});
             this.cboGender.Location = new System.Drawing.Point(60, 42);
             this.cboGender.Name = "cboGender";
             this.cboGender.Size = new System.Drawing.Size(121, 21);
@@ -428,22 +427,6 @@
             this.btnFinish.UseVisualStyleBackColor = true;
             this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(126, 9);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(26, 13);
-            this.label15.TabIndex = 33;
-            this.label15.Text = "Age";
-            // 
-            // txtAge
-            // 
-            this.txtAge.Location = new System.Drawing.Point(158, 6);
-            this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(100, 20);
-            this.txtAge.TabIndex = 34;
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -478,8 +461,6 @@
             this.ClientSize = new System.Drawing.Size(584, 263);
             this.Controls.Add(this.cboEthnicity);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.txtAge);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.btnFinish);
             this.Controls.Add(this.btnNewStudent);
             this.Controls.Add(this.btnSubmit);
@@ -553,8 +534,6 @@
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnNewStudent;
         private System.Windows.Forms.Button btnFinish;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtAge;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cboEthnicity;
     }
