@@ -53,6 +53,8 @@ namespace DataAggregation
             txtWorld.Text = null;
             txtAuthority.Text = null;
             txtProgress.Text = null;
+
+            lblStudent.Text = "Student: " + intAmountStudents;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -138,7 +140,7 @@ namespace DataAggregation
                 lstEquality.Add(lstStudents[i].dblEquality);
             }
             lstEquality.Sort();
-            dblEqualityExtreme = lstEquality[lstEquality.Count];
+            dblEqualityExtreme = lstEquality[lstEquality.Count - 1];
 
             List<double> lstNation = new List<double>();
             double dblNationExtreme = 0;
@@ -147,7 +149,7 @@ namespace DataAggregation
                 lstNation.Add(lstStudents[i].dblNation);
             }
             lstNation.Sort();
-            dblNationExtreme = lstNation[lstNation.Count];
+            dblNationExtreme = lstNation[lstNation.Count - 1];
 
             List<double> lstLiberty = new List<double>();
             double dblLibertyExtreme = 0;
@@ -156,7 +158,7 @@ namespace DataAggregation
                 lstLiberty.Add(lstStudents[i].dblLiberty);
             }
             lstLiberty.Sort();
-            dblLibertyExtreme = lstLiberty[lstLiberty.Count];
+            dblLibertyExtreme = lstLiberty[lstLiberty.Count - 1];
 
             List<double> lstTradition = new List<double>();
             double dblTraditionExtreme = 0;
@@ -165,7 +167,7 @@ namespace DataAggregation
                 lstTradition.Add(lstStudents[i].dblTradition);
             }
             lstTradition.Sort();
-            dblTraditionExtreme = lstTradition[lstTradition.Count];
+            dblTraditionExtreme = lstTradition[lstTradition.Count - 1];
 
             List<double> lstMarkets = new List<double>();
             double dblMarketsExtreme = 0;
@@ -174,7 +176,7 @@ namespace DataAggregation
                 lstMarkets.Add(lstStudents[i].dblMarkets);
             }
             lstMarkets.Sort();
-            dblMarketsExtreme = lstMarkets[lstMarkets.Count];
+            dblMarketsExtreme = lstMarkets[lstMarkets.Count - 1];
 
             List<double> lstWorld = new List<double>();
             double dblWorldExtreme = 0;
@@ -183,7 +185,7 @@ namespace DataAggregation
                 lstWorld.Add(lstStudents[i].dblWorld);
             }
             lstWorld.Sort();
-            dblWorldExtreme = lstWorld[lstWorld.Count];
+            dblWorldExtreme = lstWorld[lstWorld.Count - 1];
 
             List<double> lstAuthority = new List<double>();
             double dblAuthorityExtreme = 0;
@@ -192,7 +194,7 @@ namespace DataAggregation
                 lstAuthority.Add(lstStudents[i].dblAuthority);
             }
             lstAuthority.Sort();
-            dblAuthorityExtreme = lstAuthority[lstAuthority.Count];
+            dblAuthorityExtreme = lstAuthority[lstAuthority.Count - 1];
 
             List<double> lstProgress = new List<double>();
             double dblProgressExtreme = 0;
@@ -201,12 +203,12 @@ namespace DataAggregation
                 lstProgress.Add(lstStudents[i].dblProgress);
             }
             lstProgress.Sort();
-            dblProgressExtreme = lstProgress[lstProgress.Count];
+            dblProgressExtreme = lstProgress[lstProgress.Count - 1];
 
             #endregion
 
             #region Outputs
-            string strOutput = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "dataAggregate.txt";
+            string strOutput = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + "//dataAggregate.xml";
             Output output = new Output(dblAverageStudentEquality, dblAverageStudentNation, dblAverageStudentLiberty, dblAverageStudentTradition, dblAverageStudentMarkets, dblAverageStudentWorld, dblAverageStudentAuthority, dblAverageStudentProgress, dblEqualityExtreme, dblNationExtreme, dblLibertyExtreme, dblTraditionExtreme, dblMarketsExtreme, dblWorldExtreme, dblAuthorityExtreme, dblProgressExtreme);
 
             XmlSerializer sz = new XmlSerializer(typeof(Output));

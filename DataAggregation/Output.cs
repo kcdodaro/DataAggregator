@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAggregation
 {
-    class Output
+    public class Output
     {
         //averages
         public double dblEqualityAverage { get; set; }
