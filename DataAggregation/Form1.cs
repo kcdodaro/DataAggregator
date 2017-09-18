@@ -13,6 +13,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Xml.Serialization;
 
 namespace DataAggregation
 {
@@ -201,6 +203,17 @@ namespace DataAggregation
             lstProgress.Sort();
             dblProgressExtreme = lstProgress[lstProgress.Count];
 
+            #endregion
+
+            #region Outputs
+            string strOutput = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "dataAggregate.txt";
+            Output output = new Output();
+
+            XmlSerializer sz = new XmlSerializer(typeof(Output));
+            using (TextWriter tw = new StreamWriter(strOutput))
+            {
+                sz.Serialize(tw, output);
+            }
             #endregion
         }
     }
