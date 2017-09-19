@@ -218,7 +218,7 @@ namespace DataAggregation
 
             for(int i = 0; i < lstStudents.Count; i++)
             {
-                string strOutput2 = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + "//" + lstStudents[i].intID + ".xml";
+                string strOutput2 = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + "//Ouput//" + lstStudents[i].intID + ".xml";
 
                 XmlSerializer sz2 = new XmlSerializer(typeof(Student));
                 using (TextWriter tw = new StreamWriter(strOutput2))
